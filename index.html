@@ -1,0 +1,106 @@
+<!--@H. Kadhum, C. Conlon 11/11/2014-->
+<!--Incomplete html Version 1.0. More info at readme file. (update version for any changes you commit to github*/-->
+<!DOCTYPE html><!--Important: Please apply proper nesting for any new tags-->
+<html>
+	<head>
+		<link rel ="stylesheet" type="text/css" href="styles.css" />
+		<script src="jquery-1.11.1.min.js"></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Welcome To Rapture</title>	
+	</head>
+	<body>
+		<div id="header"><!--empty rule-->
+			<center>
+				<div id="head-section"><!--header-->
+					<div id="lang-botton">
+						<div class="english"><a href="en/index.html">ENGLISH</a>
+						</div>
+						<div class="arabic"><a href="ar/index.html">ARABIC</a>
+						</div>
+					</div>
+				</div>
+			</center>
+		</div>
+		<nav><!--nav should function as displayed below. Requires JavaScript-->
+			<ul>
+				<li data-start="0" data-end="555" data-label="Welcome" class="active">Welcome</li>
+				<li data-start="555" data-end="1075" data-label="Review" class="">Review</li>
+				<li data-start="1075" data-end="1593" data-label="Features" class="">Features</li>
+				<li data-start="1593" data-end="2113" data-label="Characters" class="">Characters</li>
+				<li data-start="2113" data-end="2627" data-label="Media" class="">Media</li>
+				<li data-start="2627" data-end="3147" data-label="Buy" class="">Buy</li>
+				<li data-start="3147" data-end="9999" data-label="Feedback" class="">Feedback</li>
+			</ul>
+		</nav>
+		<!--Welcome Panel-->
+		<article class="panel_welcome">
+		</article>
+		<article class="panel_review">
+			<div class="content">
+				<ul>
+					<li style="display: block;">Cats....</li>
+					<li style="display: none;">Some more cats.</li><!--What should display on the next slide by clicking the arrow. -->
+				</ul>
+				<div class="left info_nav">&lt;</div>
+				<div class="right info_nav active">&gt;</div>
+			</div>
+		</article>
+		<!--Features Panel. Simple unordered list.-->
+		<article class="panel_features">
+			<div class="content">
+				<ul class="features_content"><br><br>
+					<li>Feature1</li><br><br>
+					<li>Feature2</li><br><br>
+					<li>Feature3</li><br><br>
+					<li>Feature4</li><br><br>
+					<li>Feature5</li><br><br>
+				</ul>
+			</div>
+		</article>
+		<!--Characters incomplete, css or otherwise. Refer to wireframe for styling.-->
+		<article class="panel_characters">
+			<div class="content">
+				<table class="character_table">
+					<tr>
+						<td><a href="images/andrew_ryan.jpg" target="_blank"><img src="images/andrew_ryan.jpg" width="101" height="126"></a></td>
+						<td><a href="images/jack_ryan.jpg" target="_blank"><img src="images/jack_ryan.jpg" width="101" height="126"></a></td>
+					</tr>
+					<tr>
+						<td><a href="images/brigid_tenenbaum.jpg" target="_blank"><img src="images/brigid_tenenbaum.jpg" width="101" height="126"></a></td>
+						<td><a href="images/little_sister" target="_blank"><img src="images/little_sister.jpg" width="101" height="126"></a></td>
+					</tr>
+					<tr>
+						<td><a href="images/atlas.jpg" target="_blank"><img src="images/atlas.jpg" width="101" height="126"></a></td>
+						<td><a href="images/big_daddy.jpg" target="_blank"><img src="images/big_daddy.jpg" width="101" height="126"></a></td>
+					</tr>
+					<tr>
+						<td><a href="images/frank_fountaine.jpg" target="_blank"><img src="images/frank_fontaine.jpg" width="101" height="126"></a></td>
+						<td><a href="images/splicer.jpg" target="_blank"><img src="images/splicer.jpg" width="101" height="126"></a></td>
+					</tr>
+				</table>
+			</div>
+		</article>
+		<!--Media section incomplete: Css and content-->
+		<article id="media">
+			<div class="container">
+			</div>
+		</article>
+		<!--Buy section incomplete: Css and content-->
+		<article class="panel_buy">
+			<div class="content">
+			</div>
+		</article>
+		<!--feedback section incomplete: Css and content-->
+		<article class="panel_feedback">
+			<div class="content">
+			</div>
+		</article>
+		<div id="footer">
+			<center>
+				&copy; All RIghts Reserved. 2014
+			</center>
+		</div>
+	</body>
+</html>
