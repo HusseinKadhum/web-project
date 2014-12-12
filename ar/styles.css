@@ -1,19 +1,24 @@
-/*@H. Kadhum, C. Conlon 11/11/2014*/
-/*Incomplete css Version 1.0. More info at readme file. (update version for any changes you commit to github*/
-@charset "utf-8"; /*charset incoding for fonts. important.*/
+/*@H. Kadhum, C. Conlon 
+@08/12/2014
+Incomplete... Version 2.0. (update version for any changes you commit to github*/
+
+/*CSS Start*/
+@charset "utf-8";
 
 @font-face {
     font-family: myFont;
-    src: url(Andes.ttf);/*CSS3. Custom font. Must be called for each CSS rule to be applied. Example: font-family: myFont;*/
+    src: url(Andes.ttf);/*CSS3. Custom font*/
 }
-body {	/*this is the basic rule that will be inherited by anything without a rule*/
+
+body {
 color: #FFFFFF;
 background: #3366CC;
-font-family: Century Gothic, Arial;/*Arial is Fallback. Haven't tested.*/
+font-family: Century Gothic, Arial;/*Arial is Fallback.*/
 margin: 0 auto;
 }
 
-#head-section{/*header. I have a header id on html that I haven't specified any rules for. So basically obsolete. Haven't tested what removing it would do...*/
+/*header*/
+#head-section{
 background: #000;
 border-bottom: 1px solid #FFFFFF;
 height: 40px;
@@ -48,7 +53,7 @@ border-right: 1px dotted #FFFFFF;
 font-size: 15px; 
 }
 
-a:visited {/*specifies the link elements. i.e Arabic and English or any link in general*/
+a:visited {
 color: #FFFFFF;
 text-decoration: none;
 font-weight: bold;
@@ -66,168 +71,200 @@ text-decoration: none;
 font-weight: bold;
 }
 
-nav {/*nav element styling. position/size of nav. Important: refer to #12 readme*/
-position: fixed;
-left: 0;
-top: 50%;
-height: 600px;
-width: 166px;
-margin: -285px -20px 0 0;
+/*Navigation*/
+nav {
+position:fixed;
+left:0;
+top:50%;
+height:370px;
+width:184px;
+margin:-193px -17px 0 0;
 background: #000000;
 z-index: 100;
 }
 
-nav ul {/*unordered list of nav*/
-list-style: none;
-margin: 0 0 0 0;
-padding: 0 0 0 0;
-width: 166px;
+nav ul {
+list-style:none;
+margin:0 0 6px 0;
+padding:15px 0 0 0;
+width:151px
 }
 
-nav ul .active {/*Refer to class=active on idex src file. The active class is peculiar. It swaps its position based on what section you're looking at e.g. "Welcome" then active is placed on it. The idea is to have the grey box I've placed on Welcome move as you scroll through or click on menu items. JS most like.*/
+nav ul li{/*Changes the styling for the menu items. We add our custom font here*/
+font-family:'myFont', Century Gothic, Arial;
+display:block;
+width:151px;
+height:60px;
+cursor:pointer;
+font-weight:bold;
+font-size:30px;
+line-height:56px;
+color:#FFFFFF;
+padding:0 13px 0 35px;
+margin:-10px 0 0 0
+}
+
+nav ul li:hover{
+text-shadow: 0px 5px 30px rgba(255, 230, 0, 1)
+}
+
+nav ul .active {
 background: url(images/menu_bar.png);
 background-repeat: no-repeat;
 background-position: right top;
 }
 
-nav ul li { /*Changes the styling for the menu items. To call Andes.ttf, use the 'myFont' condition*/
-display: block;
-width: 166px;
-height: 86px;
-cursor: pointer;
+article{
+height:555px;
+width:100%;
+min-width:1280px;
+margin:0 auto;
+overflow:hidden
+}
+
+article .content{/*for all content classes*/
+display:block;
+position:relative;
+width:1280px;
+height:100%;
+margin:0 auto;
+overflow:auto
+}
+
+/*Welcome Panel*/
+.panel_welcome{
+background: url(images/welcome_rapture1.jpg);
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+.panel_info{
+background: #6699FF;/*Just the bg of panel-info. May change to image later?*/
+}
+
+.panel_info ul{
+list-style:none;
+padding:0;
+margin:55px 0 0 55px
+}
+
+.panel_info ul li{
+width:530px;
+height:405px;
+display:none;
+font-size:17px;
+line-height:26px
+}
+
+.panel_info ul li:first-child{
+display:block
+}
+
+.panel_info .info_nav{
+position:absolute;
+background:#FFFFFF;
+color:#c0ced9;
+display:block;
+width:50px;
+height:50px;
+bottom:30px;
+line-height:50px;
+text-align:center;
+font-size:32px;
+cursor:pointer;
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+opacity:0.8;
+-webkit-user-select:none;
+-moz-user-select:none;-ms-user-select:none;user-select:none
+}
+
+.panel_info .active{
+color:#184873
+}
+
+.panel_info .left{
+left:39px}
+
+.panel_info .right{
+left:96px}
+
+/*Features Panel*/
+.panel_features{/*img later*/
+background: #537CCF;
+}
+
+.panel_features ul {/*for features, some graphics, maybe a resized tiny video to the right of each bullet point that pops up when clicked on to view on a larger window.8*/
+padding:0;
+margin:55px 0 0 55px;
 font-weight: bold;
-font-size: 15px;
-line-height: 86px;
-color: #FFFFFF;
-padding: 0 0 0 20px;
-margin: 0 0 0 0;
-font-family:'myFont', Century Gothic, Arial;
-font-size: 166%;
 }
 
-article .content {/*for all content classes on the page*/
-display: block;
-position: relative;
-width: 1280px;
-height: 600px;
-margin: 0 auto;
-overflow: auto;
-}
-
-article.panel_welcome{/*Careful: for some reason, certain classes in article act kinda funny you won't get it to work if you have a space between the article and the class as shown on the left. You will ,however, run into some classes that won't work if you don't have a space between the class and the article. Just alternate to see what works. Current format on all css as of the writing of this long ass comment DOES work.*/
-height: 600px;
-width: 100%;
-min-width: 1280px;
-margin: 0 auto;
-overflow: hidden;
-background: url(images/welcome_rapture1.jpg) center top no-repeat;
-}
-
-article.panel_review{/*the section that will contain our review. Child of article panel_welcome*/
-background: #6699FF;/*color for now. We can change this into images later on. Look on the example above for help*/
-height: 600px;
-width: 100%;
-min-width: 1280px;
-margin: 0 auto;
-overflow: hidden;
-}
-
-article.panel_review ul {/*ul styling of panel_review*/
-list-style: none;
-padding: 0;
-margin: 20px 0 0 20px;
-}
-
-article.panel_review ul li {/*list styling.*/
-width: 530px;
-height: 405px;
-display: none;
-font-size: 17px;
-line-height: 26px;
-}
-
-article.panel_review .left {/*this rule changes the position of the arrow bottons on review panel. This and .right seems to fix them in the middle of the page. */
-left: 580px;
-}
-
-article.panel_review .info_nav {/*targets the info nav arrow bottons only.*/
-position: absolute;
-background: #FFFFFF;
-color: #c0ced9;
-display: block;
-width: 50px;
-height: 50px;
-bottom: 30px;
-line-height: 50px;
-text-align: center;
-font-size: 32px;
-cursor: pointer;
-opacity: 0.8;
-}
-
-article.panel_review .right {
-left: 640px;
-}
-
-article.panel_features{/*features styling.*/
+/*Characters Panel. The character section is very, very incomplete at the moment.*/
+.panel_characters{
 background: #336699;
-height: 600px;
-width: 100%;
-min-width: 1280px;
-margin: 0 auto;
-overflow: hidden;
-}
-
-article.panel_features ul {
-padding: 0;
-margin: 20px 0 0 20px;
-font-weight: bold;
-}
-
-article.panel_characters{/*characters styling. The character section is very, very incomplete at the moment. I have put some classes on index but haven't done and css for them.*/
-background: #191959;
-height: 600px;
-width: 100%;
-min-width: 1280px;
-margin: 0 auto;
 overflow: visible;
 }
 
-#media {/*just the media id*/
+/*Media Panel*/
+#zoomer{
+position:relative;
+top:0;
+left:0;
+height:450px;
+width:100%;
+margin:0 auto;
+overflow:hidden;
+display:block
+}
+
+#zoomer .container{
+height:450px;
+width:9999px;
+position:relative
+}
+
+#zoomer .container .image{
+position:absolute;
+left:0;
+top:0;
+display:block;
+height:450px;
+width:642px;
+cursor:pointer;
+-moz-transition:left,0.3s;
+-o-transition:left,0.3s;
+-webkit-transition:left,0.3s;
+transition:left,0.3s;
+-moz-transform:0;
+-webkit-transform:0;
+transform:0
+}
+
+#zoomer .container .image span{
+border:1px solid #333;
+width:100%;height:448px;
+display:block;
+-moz-transition:background-position,0.3s;
+-o-transition:background-position,0.3s;
+-webkit-transition:background-position,0.3s;
+transition:background-position,0.3s;
+-moz-transform:0;
+-webkit-transform:0;
+transform:0
+}
+
+/*Buy Panel. Incomplete*/
+.panel_buy {
 background: #336699;
-position: relative;
-top: 0;
-left: 0;
-height: 600px;
-width: 100%;
-margin: 0 auto;
-overflow: hidden;
-display: block;
-}
-
-#media .container {/*contains our images/video*/
-height: 600x;
-width: 9999px;
-position: relative;
-}
-
-article.panel_buy {/*Will need a few more rules for buy panel*/
-background: #6699FF;
-height: 600px;
-width: 100%;
-min-width: 1280px;
-margin: 0 auto;
 overflow: hidden;
 }
 
-article.panel_feedback{/*Will need a few more rules for buy panel*/
-background: #336699;
-height: 600px;
-width: 100%;
-min-width: 1280px;
-margin: 0 auto;
+/*Feedback/form Panel. Incomplete*/
+.panel_feedback{
+background: #191959;
 overflow: hidden;
 }
+
 
 #footer {/*Footer. Nothing important needs to go here. Just some text alignments, maybe make it slightly bigger, add a few links.*/
 background: #000;
@@ -235,3 +272,41 @@ border-top: 1px solid #FFFFFF;
 height: 40px;
 text-align: center;
 }
+
+/*Overlay*/
+#overlay{
+background:rgba(0,0,0,0.75);
+position:fixed;
+width:100%;
+height:100%;
+display:none;
+top:0;
+left:0
+}
+
+#overlay .container{
+width:640px;height:448px;
+margin:-224px 0 0 -320px;
+position:absolute;
+top:50%;
+left:50%;
+background:#FFFFFF;
+border:5px solid #FFFFFF;
+padding:0 0 20px 0;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border-radius:5px
+}
+
+#overlay .container span{
+text-align:right;
+display:block;
+height:20px;
+line-height:20px;
+padding:0 10px 0 0;
+cursor:pointer
+}
+
+@media all and (max-width: 1200px){nav{display:none}}/*Do not change!*/
+
+/*End of Css*/

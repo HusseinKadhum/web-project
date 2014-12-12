@@ -1,21 +1,22 @@
 <!--@H. Kadhum, C. Conlon 11/11/2014-->
 <!--Incomplete html Version 1.0. More info at readme file. (update version for any changes you commit to github*/-->
 <!DOCTYPE html><!--Important: Please apply proper nesting for any new tags-->
-<html>
+	<html>
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel ="stylesheet" type="text/css" href="styles.css" />
-		<script src="jquery-1.11.1.min.js"></script>
+		<script src="jquery-2.1.1.js"></script>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Welcome To Rapture</title>	
+		<title>Welcome To Rapture</title><!--add image to title-->	
 	</head>
 	<body>
-		<div id="header"><!--empty rule-->
+		<div id="header"><!--empty rule. just a container for head-section-->
 			<center>
 				<div id="head-section"><!--header-->
 					<div id="lang-botton">
-						<div class="english"><a href="en/index.html">ENGLISH</a>
+						<div class="english"><a href="index.html">ENGLISH</a>
 						</div>
 						<div class="arabic"><a href="ar/index.html">ARABIC</a>
 						</div>
@@ -23,25 +24,26 @@
 				</div>
 			</center>
 		</div>
-		<nav><!--nav should function as displayed below. Requires JavaScript-->
+		<nav style="opacity: 1;">
 			<ul>
-				<li data-start="0" data-end="555" data-label="Welcome" class="active">Welcome</li>
-				<li data-start="555" data-end="1075" data-label="Review" class="">Review</li>
-				<li data-start="1075" data-end="1593" data-label="Features" class="">Features</li>
-				<li data-start="1593" data-end="2113" data-label="Characters" class="">Characters</li>
-				<li data-start="2113" data-end="2627" data-label="Media" class="">Media</li>
-				<li data-start="2627" data-end="3147" data-label="Buy" class="">Buy</li>
-				<li data-start="3147" data-end="9999" data-label="Feedback" class="">Feedback</li>
+				<li data-label="Welcome" class="">Welcome</li><!--custom data attributes data-->
+				<li data-label="Review" class="">Review</li>
+				<li data-label="Features" class="">Features</li>
+				<li data-label="Characters" class="">Characters</li>
+				<li data-label="Media" class="">Media</li>
+				<li data-label="Buy" class="">Buy</li>
+				<li data-label="Feedback" class="">Feedback</li>
 			</ul>
 		</nav>
 		<!--Welcome Panel-->
 		<article class="panel_welcome">
 		</article>
-		<article class="panel_review">
+		<!--Review Panel-->
+		<article class="panel_info">
 			<div class="content">
 				<ul>
-					<li style="display: block;">Cats....</li>
-					<li style="display: none;">Some more cats.</li><!--What should display on the next slide by clicking the arrow. -->
+					<li style="display: block;">Sam Cogan...</li>
+					<li style="display: none;">Even More Sam Cogan</li>
 				</ul>
 				<div class="left info_nav">&lt;</div>
 				<div class="right info_nav active">&gt;</div>
@@ -50,7 +52,7 @@
 		<!--Features Panel. Simple unordered list.-->
 		<article class="panel_features">
 			<div class="content">
-				<ul class="features_content"><br><br>
+				<ul><br><br>
 					<li>Feature1</li><br><br>
 					<li>Feature2</li><br><br>
 					<li>Feature3</li><br><br>
@@ -59,7 +61,7 @@
 				</ul>
 			</div>
 		</article>
-		<!--Characters incomplete, css or otherwise. Refer to wireframe for styling.-->
+		<!--Characters incomplete, css or otherwise. Refer to wireframe.-->
 		<article class="panel_characters">
 			<div class="content">
 				<table class="character_table">
@@ -82,25 +84,62 @@
 				</table>
 			</div>
 		</article>
-		<!--Media section incomplete: Css and content-->
-		<article id="media">
+		
+		<!--Media Panel-->
+		<article id="zoomer">
 			<div class="container">
+				<div class="image" data-type="image" data-content="1.jpg"><span style="background: url(images/1.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="2.jpg"><span style="background: url(images/2.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="3.jpg"><span style="background: url(images/3.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="4.jpg"><span style="background: url(images/4.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="5.jpg"><span style="background: url(images/5.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="6.jpg"><span style="background: url(images/6.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="7.jpg"><span style="background: url(images/7.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="8.jpg"><span style="background: url(images/8.jpg);"></span></div>
+				
+				<div class="image" data-type="youtube" data-content="CoYorK3E4aM"><span style="background: url(images/v_img.jpg);"></span></div> 														
+				<div class="image" data-type="image" data-content="9.jpg"><span style="background: url(images/9.jpg);"></span></div>		
+				<div class="image" data-type="image" data-content="10.jpg"><span style="background: url(images/10.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="11.jpg"><span style="background: url(images/11.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="12.jpg"><span style="background: url(images/12.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="13.jpg"><span style="background: url(images/13.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="14.jpg"><span style="background: url(images/14.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="15.jpg"><span style="background: url(images/15.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="16.jpg"><span style="background: url(images/16.jpg);"></span></div>
+				<div class="image" data-type="image" data-content="17.jpg"><span style="background: url(images/17.jpg);"></span></div>
 			</div>
 		</article>
 		<!--Buy section incomplete: Css and content-->
 		<article class="panel_buy">
 			<div class="content">
+				<ul><br><br>
+					<li>Buy links</li>
+				</ul>
 			</div>
 		</article>
 		<!--feedback section incomplete: Css and content-->
 		<article class="panel_feedback">
 			<div class="content">
+				<ul><br><br>
+					<li>Form</li>
+				</ul>
 			</div>
 		</article>
 		<div id="footer">
 			<center>
 				&copy; All RIghts Reserved. 2014
 			</center>
+		</div>
+		<!--script source. We are linking to an external js file.-->
+		<script src="script.js"></script>
+		
+		<!--Media Overlay-->
+		<div id="overlay">
+			<div class="container">
+				<div id="content">
+				</div>
+				<span style="color:black;font-weight:bold">X</span>
+			</div>
 		</div>
 	</body>
 </html>
