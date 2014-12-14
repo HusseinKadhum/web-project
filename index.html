@@ -65,22 +65,27 @@
 		<article class="panel_characters">
 			<div class="content">
 				<table class="character_table">
-					<tr>
-						<td><a href="images/andrew_ryan.jpg" target="_blank"><img src="images/andrew_ryan.jpg" width="101" height="126"></a></td>
-						<td><a href="images/jack_ryan.jpg" target="_blank"><img src="images/jack_ryan.jpg" width="101" height="126"></a></td>
-					</tr>
-					<tr>
-						<td><a href="images/brigid_tenenbaum.jpg" target="_blank"><img src="images/brigid_tenenbaum.jpg" width="101" height="126"></a></td>
-						<td><a href="images/little_sister" target="_blank"><img src="images/little_sister.jpg" width="101" height="126"></a></td>
-					</tr>
-					<tr>
-						<td><a href="images/atlas.jpg" target="_blank"><img src="images/atlas.jpg" width="101" height="126"></a></td>
-						<td><a href="images/big_daddy.jpg" target="_blank"><img src="images/big_daddy.jpg" width="101" height="126"></a></td>
-					</tr>
-					<tr>
-						<td><a href="images/frank_fountaine.jpg" target="_blank"><img src="images/frank_fontaine.jpg" width="101" height="126"></a></td>
-						<td><a href="images/splicer.jpg" target="_blank"><img src="images/splicer.jpg" width="101" height="126"></a></td>
-					</tr>
+					<button id="jackpic"></button>
+					<button id="fontainepic"></button>
+					
+					<div id="textbox">Click a Face, See a story</div>
+
+<script>
+$('#jackpic').on('click',function(){
+    if($('#textbox').css('display')!='none'){
+    $('#textbox').html('The Protagonist of our story is Jack Wynand. Little is known of his past but through progression of the story more we learn more than he ever did. Jack is a young man in his twenties whom was simply on a plane trip for work when the plane crashes in the atlantic ocean and he gets dragged into the mess of Rapture.He survives the crash and finds a lighthouse with an elevator inside. The elevator brings him to Rapture and unravels a story with many revelations. The player chooses a path for Jack which definitively lead him to a positive or negative destination. Along the way theyll need to fight of the many horrors of Rapture and interact with its remaining semi-sane population.').show().siblings('div').hide();
+    }});
+	//else if($('#fontainepic').on('click',function(){
+	//	($('textbox').css('display')!='none'){
+     //   $('#textbox').html('You are a bad ass mother fucker!!! . . . not ').show().siblings('div').hide();
+    //}}); 
+
+	$('#fontainepic').on('click',function(){
+    if($('#textbox').css('display')!='none'){
+    $('#textbox').html('Fontaine is the businessman whom backed Lambs projects and research into the magical Adam. He made his way up through rootlesness and some dabbling in illegal activities such as smuggling and dealing adam').show().siblings('div').hide();
+    }});
+</script>					
+					
 				</table>
 			</div>
 		</article>
