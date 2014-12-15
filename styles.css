@@ -204,7 +204,49 @@ font-weight: bold;
 background: #336699;
 overflow: visible;
 }
-
+#jackpic{
+position:relative;
+right:-30px;
+height:150px;
+width:150px;
+background-image:url("images/jack_ryan.jpg");
+border: 2px solid #FFFF66;
+border-radius:15px;
+}
+#jackpic:focus{
+outline: none;
+border-color: #FFFF66;
+box-shadow: 0 0 50px #FFFF66;
+}
+#fontainepic{
+position:relative;
+right:-40px;
+height:150px;
+width:150px;
+background-image:url("images/frank_fontaine.jpg");
+border: 2px solid #FFFF66;
+border-radius:15px;
+}
+#fontainepic:focus{
+outline: none;
+border-color: #FFFF66;
+box-shadow: 0 0 50px #FFFF66;
+}
+#textbox{
+text-shadow: 5px 5px 5px black;
+color:white;
+font-family:andes;
+font-size:250%;
+overflow:auto;
+border-style:groove;
+border-width:5px;
+border-color:gold;
+position:relative;
+top:-150px;
+right:-400px;
+height:300px;
+width:800px;
+}
 /*Media Panel*/
 #zoomer{
 position:relative;
