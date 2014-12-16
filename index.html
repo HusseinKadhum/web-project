@@ -1,6 +1,6 @@
 <!--@H. Kadhum, C. Conlon 11/11/2014-->
-<!--Incomplete html Version 1.0. More info at readme file. (update version for any changes you commit to github*/-->
-<!DOCTYPE html><!--Important: Please apply proper nesting for any new tags-->
+<!--Version 3.0. Source code on Github. Important: Please apply proper nesting for any new tags, or die a most horrible death.-->
+<!DOCTYPE html>
 	<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -42,8 +42,15 @@
 		<article class="panel_info">
 			<div class="content">
 				<ul>
-					<li style="display: block;">Sam Cogan...</li>
-					<li style="display: none;">Even More Sam Cogan</li>
+					<li><h2>A Man Chooses...</h2><br>
+					The world of BioShock throws the player into a lost utopia beneath the sea. The vast City of Rapture housed thousands of the Earth's brightest minds, skilled artists and hardest workers. The cream of the crop! The reins of Governments and policies are not long enough to reach down here. For a time it was a society of prosperity and radical thinking. But these tales always have a twist.<br><br>
+					The colony under the sea just needed something to divide them. Societal problems of the surface made their way down with the people. After a short period of time the occupants were bickering with one another and with word of an outsider planning an overthrow, Rapture was ready to pop! Then came the discovery that could have changed mankind, a type of slug with a miraculous healing ability. A doctor whom had been brought down to try analyse & calm the situation got backing from the biggest businessmen in Rapture to further research and understand the slugs abilities. The understanding was that all profits gained would belong to the backer...
+					</li>
+					<li><h2>A Slave Obeys</h2><br>
+					The discoveries were astounding to both parties. The slug secreted a fluid that opened the path to D.N.A. manipulation. Diseases were curable and man could control the elements. From this point, Rapture took a dark turn. The new miracle juice christened 'ADAM' could be harvested with a much higher yield if the slug was implanted in a human host. For some reason young girls were most suited for implantation. This was the point of no return.<br><br> 
+					Large amounts of ADAM were now in production, greed and fear took hold. The key figures began to see one another as threats and so did their followers, the city fell into civil war and bodies lay around every second corner. The young host girls were sent out to gather the remaining ADAM left in the corpses, although some citizens were still trying to live a normal life (under the sea) most had developed a heavy dependency for the wonder drug. Many turned to desperate measures in order to get the Adam from the young girls. Robust bodyguards were created to protect the young girls while they eerily went from body to body. Present day Rapture is a chaos zone with no order and many addicts looking for their next hit and violence is their type of communication. 
+					<br><br><i><strong>Enter a stranger, an outsider…</strong></i>
+					</li>
 				</ul>
 				<div class="left info_nav">&lt;</div>
 				<div class="right info_nav active">&gt;</div>
@@ -52,44 +59,40 @@
 		<!--Features Panel. Simple unordered list.-->
 		<article class="panel_features">
 			<div class="content">
-				<ul><br><br>
-					<li>Feature1</li><br><br>
-					<li>Feature2</li><br><br>
-					<li>Feature3</li><br><br>
-					<li>Feature4</li><br><br>
-					<li>Feature5</li><br><br>
+				<ul>
+					<li><strong>An innovative and incredible experience.</strong> Explore new depths in gaming as you gaze upon the awe-inspiring and immersive world of Rapture. Witness the vividly illustrated forlorn Art Deco city, and experience the wonders of a hidden city built under the ocean. Engage yourself with the denizens of Rapture as you learn of their demise.  But beware, things are not as they always seem…. </li><br><br>
+					<li><strong>Choices that matter.</strong>A mature story in which your actions and choices have consequences. Make challenging and thought-provoking decisions while you attempt to uncover the secrets of Rapture. Will you save or exploit the innocent?</li><br><br>
+					<li><strong>A shooter unlike any other.</strong> Interact with the environment and wield powerful weapons. Everything is your weapon: Your body, your enemies and your surroundings. RPG-like elements also allow you customize your arsenal to devastating effects. BioShock expands beyond the normal realm of FPS games. </li><br><br>
+					<li><strong>Wield powerful abilities.</strong>The advent of ADAM brought about superhuman abilities. Transform yourself into the ultimate weapon by obtaining gene-modifying Plasmids. Send jolts of electricity to electrocute an opponent, decimate them with fire, or unleash a swarm of killer hornets hatched from the veins in your arms. <strong>The choice is yours.</strong></li><br><br>
 				</ul>
 			</div>
 		</article>
-		<!--Characters incomplete, css or otherwise. Refer to wireframe.-->
+		<!--Characters Panel-->
 		<article class="panel_characters">
 			<div class="content">
-				<table class="character_table">
-					<button id="jackpic"></button>
-					<button id="fontainepic"></button>
-					
-					<div id="textbox">Click a Face, See a story</div>
-
-<script>
-$('#jackpic').on('click',function(){
-    if($('#textbox').css('display')!='none'){
-    $('#textbox').html('The Protagonist of our story is Jack Wynand. Little is known of his past but through progression of the story more we learn more than he ever did. Jack is a young man in his twenties whom was simply on a plane trip for work when the plane crashes in the atlantic ocean and he gets dragged into the mess of Rapture.He survives the crash and finds a lighthouse with an elevator inside. The elevator brings him to Rapture and unravels a story with many revelations. The player chooses a path for Jack which definitively lead him to a positive or negative destination. Along the way theyll need to fight of the many horrors of Rapture and interact with its remaining semi-sane population.').show().siblings('div').hide();
-    }});
-	//else if($('#fontainepic').on('click',function(){
-	//	($('textbox').css('display')!='none'){
-     //   $('#textbox').html('You are a bad ass mother fucker!!! . . . not ').show().siblings('div').hide();
-    //}}); 
-
-	$('#fontainepic').on('click',function(){
-    if($('#textbox').css('display')!='none'){
-    $('#textbox').html('Fontaine is the businessman whom backed Lambs projects and research into the magical Adam. He made his way up through rootlesness and some dabbling in illegal activities such as smuggling and dealing adam').show().siblings('div').hide();
-    }});
-</script>					
-					
+				<div id="textbox">
+					<div class="heading">Click a Face, See a story</div>
+				</div>
+				<table>
+					<tr>
+						<td><button id="jackpic"></button></td>
+						<td><button id="fontainepic"></button></td>
+					</tr>
+					<tr>
+						<td><button id="ryanpic"></button></td>
+						<td><button id="tenenbaumpic"></button></td>
+					</tr>
+					<tr>
+						<td><button id="sisterpic"></button></td>
+						<td><button id="daddypic"></button></a></td>
+					</tr>
+					<tr>
+					<td><button id="atlaspic"></button></td>
+					<td><button id="splicerpic"></button></td>
+					</tr>	
 				</table>
 			</div>
 		</article>
-		
 		<!--Media Panel-->
 		<article id="zoomer">
 			<div class="container">
@@ -114,35 +117,50 @@ $('#jackpic').on('click',function(){
 				<div class="image" data-type="image" data-content="17.jpg"><span style="background: url(images/17.jpg);"></span></div>
 			</div>
 		</article>
-		<!--Buy section incomplete: Css and content-->
+		<!--Buy Panel-->
 		<article class="panel_buy">
 			<div class="content">
-				<ul><br><br>
-					<li>Buy links</li>
-				</ul>
+				<div id="buybox">
+					<div class="heading"><h2>Rapture awaits you...</h2><br></div>
+					<table class="buy_table">
+						<tr>
+							<th>Steam Download</th>
+							<th>Amazon</th>
+							<th>XBox</th>
+							<th>PlayStation</th>
+						</tr>
+						<tr>
+							<td><a href="http://store.steampowered.com/app/7670/" target="blank"><img src="images/steam-logo.jpg" alt="Steam" width="250" height="250" title="store.steampowered.com"></a></td>
+							<td><a href="http://www.amazon.co.uk/2K-Games-Bioshock-PS3/dp/B001EO74N2/" target="blank"><img src="images/amazon-logo.jpg" alt="Amazon" width="250" height="250" title="amazon.co.uk"></a></td>
+							<td><a href="http://marketplace.xbox.com/en-IE/Product/BioShock/66acd000-77fe-1000-9115-d802545407d8/" target="blank"><img src="images/xbox-logo.jpg" alt="XBox" width="250" height="250" title="marketplace.xbox.com"></a></td>
+							<td><a href="http://ie.playstation.com/psn/games/detail/item124226/BioShock/" target="blank"><img src="images/playstation-logo.jpg" alt="Sony" width="250" height="250" title="ie.playstation.com"></a></td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</article>
-		<!--feedback section incomplete: Css and content-->
+		<!--feedback Panel-->
 		<article class="panel_feedback">
 			<div class="content">
-				<ul><br><br>
-					<li>Form</li>
-					<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
-					Name:<br>
-					<input type="text" name="name" value="your name"><br>
-					E-mail:<br>
-					<input type="text" name="mail" value="your email"><br>
-					Comment:<br>
-					<input type="text" name="comment" value="your comment" size="50"><br><br>
-					<input type="submit" value="Send">
-					<input type="reset" value="Reset">
-					</form>
-				</ul>
+				<div id="form">
+					<ul><br><br>
+						<li>Form</li>
+						<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+							Name:<br>
+							<input type="text" name="name" value="your name"><br>
+							E-mail:<br>
+							<input type="text" name="mail" value="your email"><br>
+							Comment:<br>
+							<input type="text" name="comment" value="your comment" size="50"><br><br>
+							<input type="submit" value="Send">
+							<input type="reset" value="Reset">
+						</form>
+					</ul>
+				</div>
 			</div>
 		</article>
 		<div id="footer">
-			<center>
-				&copy; All RIghts Reserved. 2014
+			<center><strong>Hussein Kadhum, Conor Conlon BSHC Web Project. &copy; All RIghts Reserved. 2014.</strong>
 			</center>
 		</div>
 		<!--script source. We are linking to an external js file.-->

@@ -12,9 +12,29 @@ Incomplete... Version 2.0. (update version for any changes you commit to github*
 
 body {
 color: #FFFFFF;
-background: #3366CC;
+background: #000000;
 font-family: Century Gothic, Arial;/*Arial is Fallback.*/
+font-size:18px;
 margin: 0 auto;
+}
+
+h1{
+font-family: 'myFont', Century Gothic, Arial;
+color:gold;
+font-size: 50px;
+font-weight: lighter;
+text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+margin-top:3px;
+}
+
+h2{
+font-family: 'myFont', Century Gothic, Arial;
+color:gold;
+font-size: 40px;
+font-weight: lighter;
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 0);
+margin-top:-25px;
+margin-bottom: 20px;
 }
 
 /*header*/
@@ -25,7 +45,7 @@ height: 40px;
 text-align: center;
 }
 
-#lang-botton {/*part of the header that contains the 2 following classes*/
+#lang-botton {
 z-index: 10000;
 position: absolute;
 top: 8px;
@@ -49,7 +69,7 @@ margin-right: 10px;
 border-right: 1px dotted #FFFFFF;
 }
 
-#lang-botton a { /*specifies the link elements. i.e Arabic and English*/
+#lang-botton a {
 font-size: 15px; 
 }
 
@@ -71,7 +91,7 @@ text-decoration: none;
 font-weight: bold;
 }
 
-/*Navigation*/
+/*Navigation */
 nav {
 position:fixed;
 right:0;
@@ -87,10 +107,10 @@ nav ul {
 list-style:none;
 margin:0 0 6px 0;
 padding:15px 0 0 0;
-width:151px
+width:151px;
 }
 
-nav ul li{/*Changes the styling for the menu items. We add our custom font here*/
+nav ul li{
 font-family:'myFont', Century Gothic, Arial;
 display:block;
 width:151px;
@@ -101,7 +121,7 @@ font-size:30px;
 line-height:56px;
 color:#FFFFFF;
 padding:0 13px 0 35px;
-margin:-10px 0 0 0
+margin:-10px 0 0 0;
 }
 
 nav ul li:hover{
@@ -109,55 +129,59 @@ text-shadow: 0px 5px 30px rgba(255, 230, 0, 1)
 }
 
 nav ul .active {
-background: url(images/menu_bar.png);
+background: url(images/menu_bar.jpg);
 background-repeat: no-repeat;
 background-position: right top;
 }
 
+/* Containers */
 article{
 height:555px;
 width:100%;
 min-width:1280px;
 margin:0 auto;
-overflow:hidden
+overflow:hidden;
 }
 
-article .content{/*for all content classes*/
+article .content{
 display:block;
 position:relative;
 width:1280px;
 height:100%;
 margin:0 auto;
-overflow:auto
+overflow:auto;
 }
 
-/*Welcome Panel*/
+/*Welcome Panel */
 .panel_welcome{
 background: url(images/welcome_rapture1.jpg);
 background-repeat: no-repeat;
 background-position: center top;
+border-bottom:1px solid white;
 }
 
 .panel_info{
-background: #6699FF;/*Just the bg of panel-info. May change to image later?*/
+background: url(images/info.jpg);
+background-repeat: no-repeat;
+background-position: center top;
+border-bottom:1px solid white;
 }
 
 .panel_info ul{
 list-style:none;
 padding:0;
-margin:55px 0 0 55px
+margin:55px 0 0 55px;
 }
 
 .panel_info ul li{
-width:530px;
+width:800px;
 height:405px;
 display:none;
-font-size:17px;
-line-height:26px
+line-height:120%;
 }
 
 .panel_info ul li:first-child{
-display:block
+display:block;
 }
 
 .panel_info .info_nav{
@@ -175,7 +199,7 @@ cursor:pointer;
 filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
 opacity:0.8;
 -webkit-user-select:none;
--moz-user-select:none;-ms-user-select:none;user-select:none
+-moz-user-select:none;-ms-user-select:none;user-select:none;
 }
 
 .panel_info .active{
@@ -183,32 +207,63 @@ color:#184873
 }
 
 .panel_info .left{
-left:39px}
+left:39px;
+}
 
 .panel_info .right{
-left:96px}
-
-/*Features Panel*/
-.panel_features{/*img later*/
-background: #537CCF;
+left:96px;
 }
 
-.panel_features ul {/*for features, some graphics, maybe a resized tiny video to the right of each bullet point that pops up when clicked on to view on a larger window.8*/
+/*Features Panel */
+.panel_features{
+background: url(images/features.jpg);
+background-repeat: no-repeat;
+background-position: center top;
+border-bottom:1px solid white;
+}
+
+.panel_features ul {
 padding:0;
 margin:55px 0 0 55px;
-font-weight: bold;
 }
 
-/*Characters Panel. The character section is very, very incomplete at the moment.*/
-.panel_characters{
-background: #336699;
-overflow: visible;
+.panel_features ul li{
+width:800px;
+margin-top: -10px;
+line-height:120%;
 }
+
+/*Characters Panel */
+.panel_characters{
+background: url(images/characters.jpg);
+background-repeat: no-repeat;
+background-position: center top;
+border-bottom:1px solid white;
+}
+
+.heading{/*Applies for buy panel as well.*/
+top:10px;
+color:gold;
+font-family: 'myFont', Century Gothic, Arial;
+font-weight: 600;
+font-size: 40px;
+text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+}
+
+#textbox{
+position:absolute;
+width:700px;
+height:300px;
+left:300px;
+top:20px;
+line-height:120%;
+}
+
 #jackpic{
 position:relative;
 right:-30px;
-height:150px;
-width:150px;
+height:126px;
+width:101px;
 background-image:url("images/jack_ryan.jpg");
 border: 2px solid #FFFF66;
 border-radius:15px;
@@ -218,11 +273,12 @@ outline: none;
 border-color: #FFFF66;
 box-shadow: 0 0 50px #FFFF66;
 }
+
 #fontainepic{
 position:relative;
-right:-40px;
-height:150px;
-width:150px;
+right:-30px;
+height:126px;
+width:101px;
 background-image:url("images/frank_fontaine.jpg");
 border: 2px solid #FFFF66;
 border-radius:15px;
@@ -232,21 +288,97 @@ outline: none;
 border-color: #FFFF66;
 box-shadow: 0 0 50px #FFFF66;
 }
-#textbox{
-text-shadow: 5px 5px 5px black;
-color:white;
-font-family:andes;
-font-size:250%;
-overflow:auto;
-border-style:groove;
-border-width:5px;
-border-color:gold;
+
+#ryanpic{
 position:relative;
-top:-150px;
-right:-400px;
-height:300px;
-width:800px;
+right:-30px;
+height:126px;
+width:101px;
+background-image:url("images/andrew_ryan.jpg");
+border: 2px solid #FFFF66;
+border-radius:15px;
 }
+#ryanpic:focus{
+outline: none;
+border-color: #FFFF66;
+box-shadow: 0 0 50px #FFFF66;
+}
+
+#tenenbaumpic{
+position:relative;
+right:-30px;
+height:126px;
+width:101px;
+background-image:url("images/brigid_tenenbaum.jpg");
+border: 2px solid #FFFF66;
+border-radius:15px;
+}
+#tenenbaumpic:focus{
+outline: none;
+border-color: #FFFF66;
+box-shadow: 0 0 50px #FFFF66;
+}
+
+#sisterpic{
+position:relative;
+right:-30px;
+height:126px;
+width:101px;
+background-image:url("images/little_sister.jpg");
+border: 2px solid #FFFF66;
+border-radius:15px;
+}
+#sisterpic:focus{
+outline: none;
+border-color: #FFFF66;
+box-shadow: 0 0 50px #FFFF66;
+}
+
+#daddypic{
+position:relative;
+right:-30px;
+height:126px;
+width:101px;
+background-image:url("images/big_daddy.jpg");
+border: 2px solid #FFFF66;
+border-radius:15px;
+}
+#daddypic:focus{
+outline: none;
+border-color: #FFFF66;
+box-shadow: 0 0 50px #FFFF66;
+}
+
+#atlaspic{
+position:relative;
+right:-30px;
+height:126px;
+width:101px;
+background-image:url("images/atlas.jpg");
+border: 2px solid #FFFF66;
+border-radius:15px;
+}
+#atlaspic:focus{
+outline: none;
+border-color: #FFFF66;
+box-shadow: 0 0 50px #FFFF66;
+}
+
+#splicerpic{
+position:relative;
+right:-30px;
+height:126px;
+width:101px;
+background-image:url("images/splicer.jpg");
+border: 2px solid #FFFF66;
+border-radius:15px;
+}
+#splicerpic:focus{
+outline: none;
+border-color: #FFFF66;
+box-shadow: 0 0 50px #FFFF66;
+}
+
 /*Media Panel*/
 #zoomer{
 position:relative;
@@ -256,13 +388,14 @@ height:450px;
 width:100%;
 margin:0 auto;
 overflow:hidden;
-display:block
+display:block;
+border-bottom:1px solid white;
 }
 
 #zoomer .container{
 height:450px;
 width:9999px;
-position:relative
+position:relative;
 }
 
 #zoomer .container .image{
@@ -279,7 +412,7 @@ cursor:pointer;
 transition:left,0.3s;
 -moz-transform:0;
 -webkit-transform:0;
-transform:0
+transform:0;
 }
 
 #zoomer .container .image span{
@@ -292,23 +425,67 @@ display:block;
 transition:background-position,0.3s;
 -moz-transform:0;
 -webkit-transform:0;
-transform:0
+transform:0;
 }
 
-/*Buy Panel. Incomplete*/
+/*Buy Panel */
 .panel_buy {
-background: #336699;
+background: url(images/buy.jpg);
+background-repeat: no-repeat;
+background-position: center top;
+border-bottom:1px solid white;
 overflow: hidden;
 }
 
-/*Feedback/form Panel. Incomplete*/
+#buybox{
+width:1000px;
+height:300px;
+left:300px;
+line-height:120%;
+padding:0;
+margin:55px 0 0 55px;
+}
+
+table{
+border-collapse: collapse;
+margin: 15px 0 0 20px;
+}
+
+.buy_table th{
+padding: 5px;
+font-size: 20px;
+font-weight: bold;
+border-top: 3px solid white;
+border-bottom: 3px solid white;
+background:black;
+}
+
+.buy_table td{ 
+padding: 2px
+}
+
+/*Feedback, Form Panel */
 .panel_feedback{
-background: #191959;
+background: url(images/form.jpg);
+background-repeat: no-repeat;
+background-position: center top;
 overflow: hidden;
 }
 
+#form{
+list-style:none;
+padding:0;
+margin:55px 0 0 55px;
+width:800px;
+height:405px;
+}
 
-#footer {/*Footer. Nothing important needs to go here. Just some text alignments, maybe make it slightly bigger, add a few links.*/
+#form ul{
+list-style:none;
+}
+
+/*Page Footer */
+#footer {
 background: #000;
 border-top: 1px solid #FFFFFF;
 height: 40px;
@@ -323,7 +500,7 @@ width:100%;
 height:100%;
 display:none;
 top:0;
-left:0
+left:0;
 }
 
 #overlay .container{
@@ -337,7 +514,7 @@ border:5px solid #FFFFFF;
 padding:0 0 20px 0;
 -moz-border-radius:5px;
 -webkit-border-radius:5px;
-border-radius:5px
+border-radius:5px;
 }
 
 #overlay .container span{
@@ -346,7 +523,7 @@ display:block;
 height:20px;
 line-height:20px;
 padding:0 10px 0 0;
-cursor:pointer
+cursor:pointer;
 }
 
 @media all and (max-width: 1200px){nav{display:none}}/*Do not change!*/
