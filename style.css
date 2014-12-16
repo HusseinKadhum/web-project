@@ -1,0 +1,63 @@
+body{
+position:fixed;
+height:100%;
+width:100%;
+background-image:url("images/welcomeimg.jpg");
+margin:0px; 
+padding:0px;
+background-repeat:no-repeat;
+}
+#window{
+position:relative;
+z-index:1000;
+background-image:url("images/Bioshockframe2.png");
+height:100%;
+width:100%;
+margin:0px; 
+padding:0px;
+background-repeat:no-repeat;
+}
+#lf1{
+z-index:1;
+position:relative;
+left:140px;
+top:50px;
+height:150px;
+width:600px;
+
+-webkit-animation: myfirst 4s; 
+animation: myfirst 4s;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes myfirst{
+	  
+	5% {background-image:url("images/light1.png");}
+	10%  {background-image:url("images/light2.png");}
+	15%  {background-image:url("images/light3.png");}
+	20%  {background-image:url("images/light4.png");}
+	25%  {background-image:url("images/light5.png");}
+	30%  {background-image:url("images/light6.png");}
+	35%  {background-image:url("images/light7.png");}
+	40%  {background-image:url("images/light8.png");}
+	45%  {background-image:url("images/light9.png");}
+	50% {background-image:url("images/light10.png");}
+	55% {background-image:url("images/light11.png");}
+	60% {background-image:url("images/light12.png");}
+	65% {background-image:url("images/light13.png");}
+	70% {background-image:url("images/light14.png");}
+	75% {background-image:url("images/light15.png");}
+	80% {background-image:url("images/light16.png");}
+	85% {background-image:url("images/light17.png");}
+	90% {background-image:url("images/light18.png");}
+	95% {background-image:url("images/light19.png");}
+	100% {background-image:url("images/light20.png");}
+}	
+#ebutton{
+border:none;
+height:203px;
+width:191px;
+float:right;
+
+}
+
