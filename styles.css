@@ -141,7 +141,26 @@ background-position: center top;
 .panel_info{
 background: #6699FF;/*Just the bg of panel-info. May change to image later?*/
 }
+#introtextbox p{
+font-family:andes; 
+text-shadow: 5px 5px 5px black;
+font-size:250%;
+color:white;
+margin: 0px;
+padding: 0px;
+}
 
+#introtextbox{
+border-style:groove;
+border-width:5px;
+border-color:gold;
+overflow:auto;
+float:center;
+margin-top:60px; 
+height:355px;
+width:1010px;
+margin-left:150px;
+}
 .panel_info ul{
 list-style:none;
 padding:0;
