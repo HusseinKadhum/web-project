@@ -42,53 +42,6 @@ margin-bottom: 20px;
 background: #000;
 border-bottom: 1px solid #FFFFFF;
 height: 40px;
-text-align: center;
-}
-
-#lang-botton {
-z-index: 10000;
-position: absolute;
-top: 8px;
-right: 15px;
-height: 40px;
-width: 450px;
-}
-
-#lang-botton .english {
-float: right;
-margin-top: 3px;
-margin-bottom: 3px;
-}
-
-#lang-botton .arabic{
-float: right;
-margin-bottom: 3px;
-margin-top: 3px;
-padding-right: 10px;
-margin-right: 10px;
-border-right: 1px dotted #FFFFFF;
-}
-
-#lang-botton a {
-font-size: 15px; 
-}
-
-a:visited {
-color: #FFFFFF;
-text-decoration: none;
-font-weight: bold;
-}
-
-a:link {
-text-decoration: none;
-color: #FFFFFF;
-font-weight: bold;
-}
-
-a:hover {
-color: #FF9933;
-text-decoration: none;
-font-weight: bold;
 }
 
 /*Navigation */

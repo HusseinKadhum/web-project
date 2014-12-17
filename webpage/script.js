@@ -14,7 +14,7 @@ $('document').ready(function(){
 		if($(this).data('type') == 'image'){
 			$('#overlay #content').html('<img src="images/' + $(this).data('content') + '">');
 		} else if ($(this).data('type') == 'youtube'){
-			$('#overlay #content').html('<iframe width="640" height="448" src="//www.youtube-nocookie.com/embed/CoYorK3E4aM' + $(this).data('content') + '?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>');
+			$('#overlay #content').html('<iframe width="640" height="448" src="//www.youtube-nocookie.com/embed/' + $(this).data('content') + '?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>');
 		}
 		$('#overlay').fadeIn(300);
 	});
@@ -51,7 +51,7 @@ $('document').ready(function(){
 		if(currentItem.data('type') == 'image'){
 			$('#overlay #content').html('<img src="images/' + currentItem.data('content') + '">');
 		} else if (currentItem.data('type') == 'youtube'){
-			$('#overlay #content').html('<iframe width="640" height="448" src="//www.youtube-nocookie.com/embed/CoYorK3E4aM' + currentItem.data('content') + '?rel=0" frameborder="0" allowfullscreen></iframe>');
+			$('#overlay #content').html('<iframe width="640" height="448" src="//www.youtube-nocookie.com/embed/' + currentItem.data('content') + '?rel=0" frameborder="0" allowfullscreen></iframe>');
 		}
 		
 	}
